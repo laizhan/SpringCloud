@@ -1,0 +1,13 @@
+server:
+  port: 8066
+spring:
+  application:
+    name: spring-cloud-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/laizhan/spring-cloud-config
+          search-paths: config/com.seeuag.configserver
+          username: #laizhan
+          password: #********
