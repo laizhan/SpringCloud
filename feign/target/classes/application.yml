@@ -1,0 +1,22 @@
+server:
+  port: 8056
+
+spring:
+  application:
+    name: feign
+
+eureka:
+  client:
+#    register-with-eureka: false
+#    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://lz:123456@localhost:8761/eureka
+
+#feign�����ã����ӳ�ʱ����ȡ��ʱ����
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: basic
