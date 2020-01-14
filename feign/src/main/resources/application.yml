@@ -3,16 +3,16 @@ server:
 
 spring:
   application:
-    name: feign
+    name: hystrix
 
 eureka:
   client:
-#    register-with-eureka: false
-#    fetch-registry: false
+    register-with-eureka: false
+    #    fetch-registry: false
     serviceUrl:
       defaultZone: http://lz:123456@localhost:8761/eureka
 
-#feignµÄÅäÖÃ£¬Á¬½Ó³¬Ê±¼°¶ÁÈ¡³¬Ê±ÅäÖÃ
+#feignçš„é…ç½®ï¼Œè¿æ¥è¶…æ—¶åŠè¯»å–è¶…æ—¶é…ç½®
 feign:
   client:
     config:
